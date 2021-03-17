@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03.html</title>
+    <style>
+        
+        .wrap{
+            background-color: #ff0;
+            width: 600px;
+            height: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+
+        .col{
+            width: 50%; 
+            height: 200px;
+        }
+
+        .wrap:nth-child(even){
+            flex-direction: row-reverse;
+        }
+       
+        .col1{
+            background-color : rgb(199, 173, 173);
+        }
+
+        img{
+            height: 200px;
+            width: 100%;
+        }
+        h1{
+            width: 50%;
+            font-size: 100px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+      <div class="wrap">
+      <div class="col"><img src="https://picsum.photos/seed/picsum/200/300" alt="">
+    </div>
+      <div class="col col1">
+          <h1>01</h1>
+      </div>
+  </div>
+  <div class="wrap">
+    <div class="col"><img src="https://picsum.photos/seed/picsum/200/300" alt="">
+  </div>
+    <div class="col col1">
+        <h1>02</h1>
+    </div>
+    <div class="wrap">
+        <div class="col"><img src="https://picsum.photos/seed/picsum/200/300" alt="">
+      </div>
+        <div class="col col1">
+            <h1>03</h1>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="col"><img src="https://picsum.photos/seed/picsum/200/300" alt="">
+      </div>
+        <div class="col col1">
+            <h1>04</h1>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="col"><img src="https://picsum.photos/seed/picsum/200/300" alt="">
+      </div>
+        <div class="col col1">
+            <h1>05</h1>
+        </div>
+    </div>
+</div>
+</body>
+</html>
