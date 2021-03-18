@@ -2,8 +2,10 @@
     width: 100%;
     height: 600px;
     display: flex;
-    background-image: url(imagefile/fivered.png);
-    background-size: 1800px 800px;
+    background-image: url(imagefile/background-fivered02.PNG);
+    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repaet;
 }
 
 .navi_underdiv1{
@@ -45,7 +47,7 @@
     margin-left: 20px;
     margin-top: 50px;
     border: none;
-    transtition: all 0.3s 0s ease;
+    transition: all 0.2s 0s ease;
 }
 
 .navi_underdiv2 button:hover{
