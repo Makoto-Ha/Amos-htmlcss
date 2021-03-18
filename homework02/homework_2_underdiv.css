@@ -1,0 +1,75 @@
+.navi_underdiv{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    background-image: url(imagefile/fivered.png);
+    background-size: 1800px 800px;
+}
+
+.navi_underdiv1{
+    width: 20%;
+    height: 100%;
+}
+
+.navi_underdiv2{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.navi_underdiv2 h1{
+    font-size: 60px;
+    font-weight: 600;
+    padding: 20px;
+    color: #fff;
+}
+
+.navi_underdiv2 h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navi_underdiv2 button{
+    font-size: 18px;
+    width: 135px;
+    height: 56px;
+    border-radius: 4.2px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #f00;
+    margin-left: 20px;
+    margin-top: 50px;
+    border: none;
+    transtition: all 0.3s 0s ease;
+}
+
+.navi_underdiv2 button:hover{
+    background-color: rgb(146, 32, 32);
+}
+
+.navi_underdiv2_classh1{
+    width: 100%;
+    height: 45%;
+}
+
+.navi_underdiv2_classp{
+    width: 100%;
+    height: 30%;
+}
+
+.navi_underdiv3{
+    width: 35%;
+    height: 100%;
+}
+
+.navi_underdiv2{
+    color: blue;
+}
+.navi_underdiv3{
+    color: green;
+}
