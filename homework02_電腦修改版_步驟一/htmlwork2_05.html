@@ -10,52 +10,47 @@
     <link rel="stylesheet" href="homework_2_underdiv.css">
     <link rel="stylesheet" href="homework2_centertext.css">
     <link rel="stylesheet" href="homework_2_three_col.css">
-    <link rel="stylesheet" href="homewor_2_center_text2.css">
-    <link rel="stylesheet" href="homework_2_slide.css">
     <style>
-        .slide_img{
-            background-image: url(imagefile/slide_underimg.png);
+        .center_text2_wrap{
             width: 100%;
-            height: 255px;
-            background-size: cover;
-            background-position: center 0;
-        }
-
-        .center_text3_wrap{
-            width: 100%;
-            height: 430px;
-            /* background-color: #29303E;   */
-            background-color: #f00;
-        }
-
-        .center_text3_wrap2{
-            width: 66%;
-            height: 100%;
-            margin: auto;
-            background-color: #0f0;
+            height: 400px;
+            background-color: #000;
+            background-image: url(imagefile/center_text2_img.png);
+            background-size: 1800px 400px;
             display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .center_text2_col{
+            width: 20%;
+            height: 15%;
+            margin-left: 300px;
+            margin-top: 120px;
         }
 
-        .center_text3_col1{
-            width: 52%;
-            height: 100%;
-            background: #ff0;
+        .center_text2_col h1{
+            font-size: 32px;
+            font-weight: 500;
+            color: rgba(20, 17, 17, 0.808);
+            text-align: center;
         }
-
-        .center_text3_col1 h1{
-            font-size: 30px;
-            font-weight: 600;
-            color: #fff;
-            margin-top: 30px;
-
-        }
-
-        .center_text3_col1 span{
+        .center_text2_col_div{
+            display: inline-block;
             text-decoration: #f00 underline;
-            text-underline-offset: 10px;
+            text-underline-offset: 14px;
             text-decoration-thickness: 2px;
         }
+        .center_text2_col2{
+            width: 50%;
+            margin-left: 410px;
+            margin-bottom: 0px;
+        }
 
+        .center_text2_col2 p{
+            color: rgba(20, 17, 17, 0.808);
+            line-height: 25px;
+            font-size: 19px;
+        }
     </style>
 </head>
 <body>
@@ -123,41 +118,6 @@
         <div class="center_text2_col2">
             <p>我們的講師長期專注於網站開發技術領域，透過研討會、社群演講及授課方式將技術知識分享給更多人知道，讓更多人了解各個技術的美好之處。</p>
         </div>
-    </div>
-
-    <div class="slide_wrap">
-        <div class="slide_content_wrap">
-            <div class="slide_content_col01">
-                <img src="imagefile/dragonbro.webp" id="dragonbro" alt="">
-                <img src="imagefile/dragonbro_underimg.png" id="dragon_underimg" alt="">
-            </div>
-            <div class="slide_content_col02">
-                <h1><span id="slide_content_h1">Ruby</span> / Git講師</h1>
-                <h3>高見龍 (Eddie Kao)</h3>
-                <p id="slide_content_col02_p1">五倍紅寶石程式資訊教育股份有限公司負責人，在國內外各大型技術</p>
-                <p>研討會擔任講者，參與過日本 RubyKaigi、日本 Ruby World</p>
-                <p>Conference、臺灣微軟 Azure Developer Day 、RubyConf</p>
-                <p>Taiwan、JSDC、WebConf 等。有二十年程式開發經驗和十多年的</p>
-                <p>教學經驗，在臺灣推廣 Ruby 及 Git 多年，在各大專院校與企業開課，深受學員喜愛。</p>
-                <p>雖非資訊本科系出身，但喜歡寫程式，而且希望可以寫一輩子程式的電腦阿宅。</p>
-                <p>著有「<a href="#">為你自己學 Git</a>」與「<a href="#">為你自己學 Ruby on Rails</a>」暢銷技術書。</p>
-                <sanp id="slide_content_col02_span">講師其他課程<hr size="1px" width="75%"></span>
-                
-                <button>Ruby on rails 實戰課程</button>
-                <button>坐上Git時光機 - 版本控制</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide_img"></div>
-
-    <div class="center_text3_wrap">
-     <div class="center_text3_wrap2">
-         <div class="center_text3_col1">
-             <h1><span>短期</span>實體課程</h1>
-         </div>
-         <div class="center_text3_col2"></div>
-     </div>
     </div>
 </body>
 </html>

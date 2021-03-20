@@ -7,10 +7,11 @@
 }
 
 .slide_content_wrap{
-    width: 42%;
+    width: 770px;
     height: 98%;
     box-shadow: 2px 7px 20px 0px rgba(46, 30, 30, 0.123);
-    margin-left: 480px;
+    /* margin-left: 480px; */
+    margin: auto;
     border-radius: 4px;
     background-color: #fff;
     display: flex;

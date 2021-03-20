@@ -1,0 +1,26 @@
+.center_text{
+    margin-top: 100px;  
+}
+
+.center_text h1{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    margin-right: 16px;
+    margin-bottom: 25px;
+    color: rgba(20, 17, 17, 0.808);
+}
+
+.center_text h1 p{
+    display: inline-block;
+    font-size: 30px;
+    color: rgba(20, 17, 17, 0.808);
+    text-decoration: #f00 underline;
+    text-underline-offset: 12px;
+    text-decoration-thickness: 2px;
+}
+.center_text p{
+    text-align: center;
+    font-size: 20px;
+    color: rgba(20, 17, 17, 0.808);
+}
