@@ -5,13 +5,14 @@
 }
 
 .three_col_wrap_wrap{
+    width: 90%;   /* 1500px */
     display: flex;
     justify-content: center;
     margin-top: 30px;
 }
 
 .three_col{
-    width: 490px;
+    width: 30%;   /* 470 */
     height: 100%;
     text-align: center;
     margin: 15px 0px;

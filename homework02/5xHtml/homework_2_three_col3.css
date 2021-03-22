@@ -38,15 +38,14 @@
 }
 
 .three_col3_wrap2{
-    width: 1500px;
+    width: 90%;
     height: 100%;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .three_col3_col{
-    width: 470px;
+    width: 30%;
     height: 400px;
     background-color: #fff;
     margin: 25px 15px 15px 15px;

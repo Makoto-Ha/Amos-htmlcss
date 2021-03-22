@@ -5,15 +5,14 @@
 }
 
 .three_col2_wrap2{
-    width: 1500px;
+    width: 90%;
     height: 100%;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .three_col2_col{
-    width: 460px;
+    width: 30%; /* 460 */
     height: 340px;
     background-color: #fff;
     margin: 20px;
