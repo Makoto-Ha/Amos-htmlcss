@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+            width: 80px;
+            height: 50px;
+            background-color: #00f;
+            margin: 0 10px;
+        }
+
+        .box2{
+            width: 0px;
+            height: 50px;
+            background-color: #00f;
+        }
+        
+        .set1{
+            transform: perspective(30px) rotateY(60deg);
+        }
+
+        .set2{
+            transform: perspective(30px) rotateY(120deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box set1"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box set2"></div>
+    </div>
+</body>
+</html>
