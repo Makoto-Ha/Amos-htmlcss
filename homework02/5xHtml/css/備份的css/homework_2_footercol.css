@@ -1,0 +1,185 @@
+.footer_wrap{
+    width: 100%;
+    background-color: #F9FAFB;
+}
+.footer_wrap2{
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.footer_content1{
+    width: 30%;
+    margin: auto;
+    font-size: 30px;
+}
+
+.footer_content2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_col{
+    width: 230px;
+    display: inline-block;
+    margin: 30px 15px;
+    border-radius: 8px;
+    box-shadow: 2px 7px 15px 1px rgba(46, 30, 30, 0.123);
+}
+
+.footer_col.col1{
+    height: 40%;
+}
+
+.footer_col_img{
+    width: 45%;
+    display: flex;
+    margin-left: 25px;
+}
+
+.col1 p{
+    font-size: 15px;
+    padding: 20px;
+    line-height: 25px;
+}
+
+.col1 img{
+    width: 36px;
+    border-radius: 50%;
+}
+
+.col1 h1{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 8px;
+    color: gray;
+    
+}
+
+.footer_col.col2{
+    height: 60%;
+    margin-bottom: 30px;
+}
+
+
+.footer_col_img2{
+    width: 45%;
+    display: flex;
+    margin-left: 18px;
+    margin-top: 14px;
+}
+
+.col2 p{
+    font-size: 15px;
+    padding: 15px;
+    line-height: 21px;
+}
+
+.col2 img{
+    width: 38px;
+    border-radius: 50%;
+    margin-top: -10px;
+}
+
+.col2 h1{
+    font-size: 14px;
+    color: gray;
+    margin-left: 8px;
+}
+
+.footer_col.col3{
+    height: 60%;
+}
+
+.footer_col_img3{
+    width: 45%;
+    display: flex;
+    margin-left: 18px;
+    margin-top: 8px;
+}
+
+.col3 p{
+    font-size: 15px;
+    padding: 20px;
+    line-height: 21px;
+}
+
+.col3 img{
+    width: 38px;
+    border-radius: 50%;
+}
+
+.col3 h1{
+    font-size: 14px;
+    color: gray;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.col4{
+    height: 70%;
+}
+
+.footer_col_img4{
+    width: 45%;
+    display: flex;
+    margin-left: 24px;
+}
+
+.col4 p{
+    font-size: 15px;
+    padding: 20px;
+    line-height: 21px;
+}
+
+.col4 img{
+    width: 38px;
+    border-radius: 50%;
+    margin-top: -10px;
+}
+
+.col4 h1{
+    font-size: 14px;
+    color: gray;
+    margin-left: 8px;
+}
+
+.col5{
+    height: 80%;
+}
+
+.footer_col_img5{
+    width: 45%;
+    display: flex;
+    margin-left: 18px;
+}
+
+.col5 p{
+    font-size: 15px;
+    padding: 20px;
+    line-height: 22px;
+}
+
+.col5 img{
+    width: 38px;
+    border-radius: 50%;
+    margin-top: -10px;
+}
+
+.col5 h1{
+    font-size: 14px;
+    color: gray;
+    margin-left: 8px;
+}
+
+.footer_col.col6{
+    height: 50%;
+}
+
+.footer_col_img6{
+    width: 35%;
+    display: flex;
+    margin-left: 18px;
+    margin-top: -10px;
+}

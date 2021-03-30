@@ -1,0 +1,32 @@
+.center_text_wrap{
+    width: 100%;
+}
+
+.center_text_wrap2{
+    width: 1440px;
+    margin: auto;
+}
+
+.center_text_wrap2 h1{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    margin-right: 16px;
+    margin-bottom: 35px;
+    color: rgba(20, 17, 17, 0.808);
+}
+
+.center_text_wrap2 h1 p{
+    display: inline-block;
+    font-size: 30px;
+    color: rgba(20, 17, 17, 0.808);
+    text-decoration: #f00 underline;
+    text-underline-offset: 12px;
+    text-decoration-thickness: 2px;
+}
+
+.center_text_wrap2 p{
+    text-align: center;
+    font-size: 20px;
+    color: rgba(20, 17, 17, 0.808);
+}

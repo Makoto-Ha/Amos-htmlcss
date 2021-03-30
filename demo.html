@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::before{
+            content:"excpet: "
+        }
+
+        p::after{
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-right: 8px solid #000;
+            vertical-align: middle;
+        }
+
+        div{
+            width: 0px;
+            height: 0px;
+            border-left: 320px solid transparent;
+            border-top: 160px solid #f00;
+            /* border-right: 320px solid #0f0; */
+            /* border-bottom: 320px solid #000; */
+        }
+
+        .div2{
+            width: 0px;
+            height: 0px;
+            border-left: 160px solid transparent;
+            border-top: 320px solid #f00;
+        }
+    </style>
+</head>
+<body>
+    <p>I am</p>
+    <div></div>
+
+    <div class="div2"></div>
+</body>
+</html>
