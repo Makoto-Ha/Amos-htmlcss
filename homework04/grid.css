@@ -1,8 +1,8 @@
 .container{
     width: 100%;
     margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
 }
 
 .row{
@@ -11,8 +11,8 @@
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
-    margin-left: -15px;
-    margin-right: -15px;
+    /* margin-left: -15px;
+    margin-right: -15px; */
 }
 
 [class*="col"]:not([class*="row"]){padding: 0 15px; box-sizing: border-box;}

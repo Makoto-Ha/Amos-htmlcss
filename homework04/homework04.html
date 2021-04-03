@@ -183,14 +183,17 @@
         }
 
         .lecturer .row{
-            width: 80%;
+            width: 70%;
             margin: auto;
         }
 
         .col-12.col-md-12.col-lg-6.col-xl-6{
-            box-shadow: 1px 0px 3px 3px;
+            box-shadow: 2px 7px 20px 0px rgb(46 30 30 / 12%);
             border-radius: 4px;
             text-align: center;
+            padding: 40px;
+            position: relative;
+            margin: 20px 0;
         }
 
         .col-12.col-md-12.col-lg-6.col-xl-6 img{
@@ -199,12 +202,68 @@
             border-radius: 50%;
         }
 
-        .col-12.col-md-12.col-lg-6.col-xl-6 h2::after{
-        }
-
         .col-12.col-md-12.col-lg-6.col-xl-6 h3{
             font-size: 18px;
         }
+
+        .col-12.col-md-12.col-lg-6.col-xl-6 hr{
+            color:rgb(170, 170, 170, 0.4);
+            margin: 20px 0;
+        }
+        .col-12.col-md-12.col-lg-6.col-xl-6 p{
+            font-size: 17px;
+            line-height: 25px;
+            text-align: left;
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .col-12.col-md-12.col-lg-6.col-xl-6 p:nth-of-type(4)::after{
+            content: "";
+            display: block;
+            width: 80%;
+            height: 1px;
+            bottom: 0;
+            top: 0;
+            right: -80px;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            background-color: rgba(88, 88, 88, 0.356);
+        }
+
+        .col-12.col-md-12.col-lg-6.col-xl-6 span{
+            color: #f00;
+            cursor: pointer;
+        }
+
+        /* .lecturer_content1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        } */
+
+        .lecturer_content2{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .lecturer_content2 button{
+            border-radius: 4px;
+            border: 1px solid #f00;
+            font-size: 18px;
+            padding: 5px;
+            width: 200px;
+            margin: 8px 0;
+            color: #f00;
+            background-color: #fff;
+        }
+
+        .lecturer_content2 button:hover{
+            background-color: #f00;
+            color: #fff;
+        }
+
     </style>
 </head>
 <body>
@@ -263,13 +322,72 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-6 col-xl-6">            
-                    <img src="https://picsum.photos/500/500?grayscale" alt="lecturer_img">
-                    <h2>HTML / CSS 講師</h2>
-                    <h3>李建杭 (Amos Lee)</h3>
+                    <div class="lecturer_content1">
+                        <img src="https://picsum.photos/500/500?grayscale" alt="lecturer_img">
+                        <h2>HTML / CSS 講師</h2>
+                        <h3>李建杭 (Amos Lee)</h3>
+                        <hr>
+                        <p>從視覺設計轉職前端的斜槓開發者，活躍於臺灣各大技術研討會，熟稔 HTML & CSS、Bootstrap、RWD、CSS3 等，為國內知名前端技術講師。</p>
+                        <p>2018 年成為 <span>Youtuber</span>，致力於使用簡單易懂的方式讓新手能夠輕鬆學習前端開發技能。</p>
+                        <p><span>iT 邦幫忙鐵人賽</span>連續三屆冠軍、連續兩屆優選，於 2020 出版「<span>都能懂的 CSS 選取器：金魚都能懂了你還怕學不會嗎（iT邦幫忙鐵人賽系列書</span>）」一書，除了熱衷於牛排的熟成，目前日益精進於釣魚技能。</p>
+                        <p>講師其他課程</p>
+                    </div>
+                    <div class="lecturer_content2">
+                        <button>網頁前端設計女性專班</button>
+                        <button>HTML 網頁設計新手村</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 col-xl-6">            
+                    <div class="lecturer_content1">
+                        <img src="https://picsum.photos/500/500?grayscale" alt="lecturer_img">
+                        <h2>HTML / CSS 講師</h2>
+                        <h3>李建杭 (Amos Lee)</h3>
+                        <hr>
+                        <p>從視覺設計轉職前端的斜槓開發者，活躍於臺灣各大技術研討會，熟稔 HTML & CSS、Bootstrap、RWD、CSS3 等，為國內知名前端技術講師。</p>
+                        <p>2018 年成為 <span>Youtuber</span>，致力於使用簡單易懂的方式讓新手能夠輕鬆學習前端開發技能。</p>
+                        <p><span>iT 邦幫忙鐵人賽</span>連續三屆冠軍、連續兩屆優選，於 2020 出版「<span>都能懂的 CSS 選取器：金魚都能懂了你還怕學不會嗎（iT邦幫忙鐵人賽系列書</span>）」一書，除了熱衷於牛排的熟成，目前日益精進於釣魚技能。</p>
+                        <p>講師其他課程</p>
+                    </div>
+                    <div class="lecturer_content2">
+                        <button>網頁前端設計女性專班</button>
+                        <button>HTML 網頁設計新手村</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 col-xl-6">            
+                    <div class="lecturer_content1">
+                        <img src="https://picsum.photos/500/500?grayscale" alt="lecturer_img">
+                        <h2>HTML / CSS 講師</h2>
+                        <h3>李建杭 (Amos Lee)</h3>
+                        <hr>
+                        <p>從視覺設計轉職前端的斜槓開發者，活躍於臺灣各大技術研討會，熟稔 HTML & CSS、Bootstrap、RWD、CSS3 等，為國內知名前端技術講師。</p>
+                        <p>2018 年成為 <span>Youtuber</span>，致力於使用簡單易懂的方式讓新手能夠輕鬆學習前端開發技能。</p>
+                        <p><span>iT 邦幫忙鐵人賽</span>連續三屆冠軍、連續兩屆優選，於 2020 出版「<span>都能懂的 CSS 選取器：金魚都能懂了你還怕學不會嗎（iT邦幫忙鐵人賽系列書</span>）」一書，除了熱衷於牛排的熟成，目前日益精進於釣魚技能。</p>
+                        <p>講師其他課程</p>
+                    </div>
+                    <div class="lecturer_content2">
+                        <button>網頁前端設計女性專班</button>
+                        <button>HTML 網頁設計新手村</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 col-xl-6">            
+                    <div class="lecturer_content1">
+                        <img src="https://picsum.photos/500/500?grayscale" alt="lecturer_img">
+                        <h2>HTML / CSS 講師</h2>
+                        <h3>李建杭 (Amos Lee)</h3>
+                        <hr>
+                        <p>從視覺設計轉職前端的斜槓開發者，活躍於臺灣各大技術研討會，熟稔 HTML & CSS、Bootstrap、RWD、CSS3 等，為國內知名前端技術講師。</p>
+                        <p>2018 年成為 <span>Youtuber</span>，致力於使用簡單易懂的方式讓新手能夠輕鬆學習前端開發技能。</p>
+                        <p><span>iT 邦幫忙鐵人賽</span>連續三屆冠軍、連續兩屆優選，於 2020 出版「<span>都能懂的 CSS 選取器：金魚都能懂了你還怕學不會嗎（iT邦幫忙鐵人賽系列書</span>）」一書，除了熱衷於牛排的熟成，目前日益精進於釣魚技能。</p>
+                        <p>講師其他課程</p>
+                    </div>
+                    <div class="lecturer_content2">
+                        <button>網頁前端設計女性專班</button>
+                        <button>HTML 網頁設計新手村</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <div style="height: 2000px"></div>
+    <!-- <div style="height: 2000px"></div> -->
 </body>
 </html>
