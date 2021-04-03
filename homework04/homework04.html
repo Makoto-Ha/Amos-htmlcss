@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="grid.css">
+    <title>五倍紅寶石</title>
+    <style>
+        .header{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            z-index: 10;
+        }
+        
+        .header_left{
+            width: 40%;
+            padding: 0.75em 0;
+        }
+
+        .header_left h1{
+            font-size: 20px;
+            padding-left: 20px;
+        }
+
+        .header_right{
+            width: 15%;
+            max-width: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        [class*="header_span"]{
+            background-color: #000;
+            width: 45%;
+            height: 2px;
+        }
+
+        .adver{
+            width: 100%;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .adver2{
+            margin: auto;
+            padding: 80px 20px 20px 20px;
+        }
+
+        .adver_content1{
+            width: 80%;
+            font-size: 40px;
+            padding-bottom: 10px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .adver_content2{
+            width: 90%;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .adver_content2 h3{
+            padding-bottom: 40px;
+            line-height: 25px;
+        }
+        .adver button{
+            font-size: 18px;
+            border-radius: 5px;
+            padding: 5px;
+            width: 130px;
+            height: 55px;
+            color: #fff;
+            background-color: #f00;
+            border: none;
+            cursor: pointer;
+        }
+
+        .adver button:hover{
+            background-color: rgb(209, 0, 0);
+        }
+
+        .gear{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gear h2{
+            font-size: 35px;
+            padding: 30px;
+            line-height: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .gear h2::after{
+            content: "";
+            border-bottom: 2px solid #f00;
+            width: 50px;
+            background-color: #f00;
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .gear h3{
+            font-size: 20px;
+            padding: 8px 20px;
+            line-height: 25px;
+            text-align: center;
+        }
+
+        .gear .row{
+            padding: 80px;
+        }
+
+        .col-12.col-md-6.col-lg-4.col-xl-4:not(:first-child){
+            margin: 20px 0;
+        }
+
+        .col-12.col-md-6.col-lg-4.col-xl-4 img{
+            width: 100%;
+        }
+
+        .col-12.col-md-6.col-lg-4.col-xl-4 h3{
+            font-size: 18px;
+        }
+
+        .col-12.col-md-6.col-lg-4.col-xl-4 p{
+            text-align: center;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .lecturer{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .lecturer_text{
+            padding: 10px;
+        }
+
+        .lecturer_text h2{
+            font-size: 30px;
+            font-weight: 600;
+            padding: 10px 10px 20px 10px;
+            text-align: left;
+            position: relative;
+        }
+
+        .lecturer_text h2::after{
+            content: "";
+            border-bottom: 2px solid #f00;
+            width: 48px;
+            background-color: #f00;
+            position: absolute;
+            bottom: 8px;
+            left: 10px;
+        }
+
+        .lecturer h3{
+            font-size: 20px;
+            padding: 10px;
+            line-height: 28px;
+        }
+
+        .lecturer .row{
+            width: 80%;
+            margin: auto;
+        }
+
+        .col-12.col-md-12.col-lg-6.col-xl-6{
+            box-shadow: 1px 0px 3px 3px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .col-12.col-md-12.col-lg-6.col-xl-6 img{
+            padding: 10px 0;
+            width: 40%;  
+            border-radius: 50%;
+        }
+
+        .col-12.col-md-12.col-lg-6.col-xl-6 h2::after{
+        }
+
+        .col-12.col-md-12.col-lg-6.col-xl-6 h3{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header_left">
+            <h1>五倍紅寶石</h1>
+        </div>
+        <div class="header_right">
+            <div class="header_span"></div>
+            <div class="header_span"></div>
+            <div class="header_span"></div>
+        </div>
+    </div>
+    
+    <section class="adver">
+        <div class="adver2">
+            <div class="adver_content1">
+                <h2>五倍學習，突破你的可能性</h2>
+            </div>
+            <div class="adver_content2">
+                <h3>掌握實戰經驗，從初心素人到業界接軌，讓專業師資為你重新定義程式教育。</h3>
+                <button>立即選課</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="gear">
+        <h2>不只停留在教你釣魚，更引領你乘風破浪</h2>
+        <h3>我們不藏私藏私的教學，讓所有人都能發揮超越五倍的價值。</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                    <img src="https://picsum.photos/100/100?grayscale" alt="fakeimg">
+                    <h3>鍛鍊實力，主導學習</h3>
+                    <p>搭配最新技術版本，掌握業界脈動，與需求緊密結合，鍛鍊程式實力。</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                    <img src="https://picsum.photos/100/100?grayscale" alt="fakeimg">
+                    <h3>完整規劃，絕不漏接</h3>
+                    <p>線上補課、線下討論與社群活動，確保學員擁有充分且多元的學習資源和支持系統。</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                    <img src="https://picsum.photos/100/100?grayscale" alt="fakeimg">
+                    <h3>挑戰困境，突破職涯</h3>
+                    <p>無論新手塊領域，或在職工程師深度進修，讓五倍為你解構學習，突破困境。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lecturer">
+        <div class="lecturer_text">
+            <h2>講師陣容</h2>
+            <h3>我們的講師長期專注於網站開發技術領域，透過研討會、社群演講及授課方式將技術知識分享給更多人知道，讓更多人了解各個技術的美好之處。</h3>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-6 col-xl-6">            
+                    <img src="https://picsum.photos/500/500?grayscale" alt="lecturer_img">
+                    <h2>HTML / CSS 講師</h2>
+                    <h3>李建杭 (Amos Lee)</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="height: 2000px"></div>
+</body>
+</html>
