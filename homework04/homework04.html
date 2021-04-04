@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="grid.css">
+    <script src="https://kit.fontawesome.com/43bcc29bc3.js" crossorigin="anonymous"></script>
     <title>五倍紅寶石</title>
     <style>
         .header{
@@ -155,11 +156,11 @@
             align-items: center;
         }
 
-        .lecturer_text{
+        .col-12.col-md-10.col-lg-8{
             padding: 10px;
         }
 
-        .lecturer_text h2{
+        .col-12.col-md-10.col-lg-8 h2{
             font-size: 30px;
             font-weight: 600;
             padding: 10px 10px 20px 10px;
@@ -167,7 +168,7 @@
             position: relative;
         }
 
-        .lecturer_text h2::after{
+        .col-12.col-md-10.col-lg-8 h2::after{
             content: "";
             border-bottom: 2px solid #f00;
             width: 48px;
@@ -620,6 +621,90 @@
             margin: auto;
             margin-top: 100px;
         }
+        
+        .footer{
+            width: 100%;
+            margin-top: 30px;
+            padding-bottom: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #29303E;
+        }
+
+        .footer h2{
+            color: #fff;
+            font-size: 25px;
+        }
+
+        .footer h3{
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .footer a{
+            text-decoration: none;
+            color: #fff;
+            margin: 10px 0;
+        }
+
+        .footer a:hover{
+            color: #f00;
+        }
+
+        .footer .col-12.col-lg-5{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-bottom: auto;
+        }
+
+        .footer .col-6.col-md-4{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer .col-6.col-md-4:nth-of-type(-n + 2){
+            margin-bottom: 60px;
+        }
+
+        .footer .col-12.col-lg-5 .row{
+            align-items: stretch;
+        }
+
+        @media screen and (min-width:768px){
+            .footer .col-12.col-lg-5 .row{
+                justify-content: flex-start;
+            }  
+        }
+
+        .footer_icon{
+            margin: auto;
+            padding-top: 40px;
+        }
+
+        .fab{
+            font-size: 35px;
+            margin: 0px 14px;
+            color: rgba(255, 255, 255, 0.493);
+        }
+
+        .fab:hover{
+            color: #fff;
+        }
+
+        .bottom{
+            background-color: #181E2D;
+            font-size: 14px;
+            color: #A0A6B1;
+            padding: 14px;
+            line-height: 22px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -674,7 +759,7 @@
     </section>
 
     <section class="lecturer">
-        <div class="lecturer_text">
+        <div class="col-12 col-md-10 col-lg-8">
             <h2>講師陣容</h2>
             <h3>我們的講師長期專注於網站開發技術領域，透過研討會、社群演講及授課方式將技術知識分享給更多人知道，讓更多人了解各個技術的美好之處。</h3>
         </div>
@@ -929,6 +1014,62 @@
         </div>
         <button>更多文章</button>
     </section>
-    <div style="height: 1000px;"></div>
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-5">
+                    <h2>五倍紅寶石 · 專業程式教育機構</h2>
+                    <a href="#">電話 | (02) 2331-5247</a>
+                    <a href="#">信箱 | course@5xcampus.com</a>
+                    <a href="#">地址 | 10046 台北市中正區衡陽路7號5樓</a>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-4">
+                                <h3>專業課程</h3>
+                                <a href="#">全方位培訓營</a>
+                                <a href="#">ASTRO Camp</a>
+                                <a href="#">線上課程</a>
+                                <a href="#">短期課程</a>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <h3>關於我們</h3>
+                                <a href="#">關於五倍紅寶石</a>
+                                <a href="#">ASTRO Camp</a>
+                                <a href="#">聯絡我們</a>
+                                <a href="#">媒體報導</a>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <h3>部落格</h3>
+                                <a href="#">專欄文章</a>
+                                <a href="#">最新消息</a>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <h3>幫助與政策</h3>
+                                <a href="#">常見問題</a>
+                                <a href="#">隱私權政策</a>
+                                <a href="#">服務條款</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_icon">
+            <a href="#">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-medium-m"></i>
+                <i class="fab fa-line"></i>
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </section>
+    <section class="bottom">
+        <p> 五倍紅寶石程式資訊教育股份有限公司 (5xRuby Training Group CO., LTD) | 台北市短期補習班立案 第 7594 號</p>
+    </section>
 </body>
 </html>
