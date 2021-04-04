@@ -124,6 +124,7 @@
         }
 
         .gear .col-12.col-md-6.col-lg-4{
+            max-width: 500px;
         }
 
         .gear .col-12.col-md-6.col-lg-4:not(:first-child){
@@ -366,16 +367,30 @@
         .three_col{
             width: 100%;
             background-color: #29303E;
+            padding-bottom: 5%;
         }
 
         .three_col .col-12.col-md-5.col-lg-3{
             box-shadow: 2px 7px 20px 0px rgba(46, 30, 30, 0.123);
             margin: 30px 20px;
             position: relative;
+            max-width: 500px;
         }
 
         .three_col .row{
-            justify-content: flex-start;
+            justify-content: center;
+        }
+
+        @media screen and (min-width:768px){
+            .three_col .row{
+                justify-content: flex-start;
+            }
+        }
+
+        @media screen and (min-width:992px){
+            .three_col .row{
+                justify-content: center;
+            }
         }
 
         .three_col h3{
@@ -439,6 +454,14 @@
 
         .three_col2{
             width: 100%;
+            position: relative;
+            margin-top: 5%;
+        }
+
+        .three_col2_h2{
+            margin: auto;
+            width: 90%;
+            max-width: 1420px;
         }
 
         .three_col2 h2{
@@ -460,12 +483,14 @@
         }
 
         .three_col2 img{
-            width: 100%;
+            max-width: 100%;
         }
 
         .three_col2 .col-12.col-lg-3{
             box-shadow: 2px 7px 20px 0px rgba(46, 30, 30, 0.123);
             margin: 30px 20px;
+            border-radius: 10px;
+            max-width: 500px;
         }
 
         .three_col2 h4{
@@ -475,10 +500,126 @@
         .three_col2 .three_col_content{
             padding: 10px;
             line-height: 22px;
-            border-radius: 10px;
         }
 
+        .three_col2 .three_col_content a{
+            text-decoration: none;
+            color: #f00;
+        }
+
+        .three_col2 .three_col_content a:after{
+            content: "❯";
+        }
+
+        .three_col2 .three_col_content a:hover:after{
+            content: " ❯";
+        }
+
+        .three_col2 .three_col_content a:hover{
+            text-decoration: underline;
+        }
         
+        .slideshow .col-12.col-lg-5.col-xl-3{
+            box-shadow: 2px 7px 20px 0px rgb(46 30 30 / 12%);
+            padding: 20px;
+            line-height: 22px;
+            margin: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+        }
+
+        .slideshow .col-12.col-lg-5.col-xl-3:nth-of-type(1) p + p{
+            padding: 10px 0;
+        }
+
+        .slideshow .col-12.col-lg-5.col-xl-3:nth-of-type(2) p + p{
+            padding: 25px 0;
+        }
+
+        .slideshow .col-12.col-lg-5.col-xl-3:nth-of-type(3) p + p{
+            padding: 10px 0;
+        }
+
+        .slideshow .col-12.col-lg-5.col-xl-3:nth-of-type(1){
+            display: none;
+        }
+
+        .slideshow .col-12.col-lg-5.col-xl-3:nth-of-type(2){
+            display: none;
+        }
+
+        @media screen and (min-width:768px) {
+            .slideshow .col-12.col-lg-5.col-xl-3:nth-of-type(1){
+                display: block;
+            }
+
+            .slideshow .col-12.col-lg-5.col-xl-3:nth-of-type(2){
+                display: block;
+            }
+        }
+
+        .slideshow .row{
+            align-items: stretch;
+        }
+
+        .slideshow_h2{
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            margin: 100px 0 30px 0;
+        }
+
+        .chosen{
+            width: 100%;
+        }
+
+        .chosen .chosen_background{
+            background-image: url(chosenimg.jpg);
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 200px;
+        }
+
+        .chosen img{
+            width: 100%;
+        }
+
+        .chosen h3{
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .chosen .chosen_content{
+            padding: 10px 0;
+            line-height: 30px;
+        }
+
+        .chosen .col-12.col-md-3{
+            margin: 0 20px;
+            max-width: 500px;
+        }
+
+        .chosen_h2{
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            margin: 60px 0 30px 0;
+        }
+
+        .chosen button{
+            font-size: 18px;
+            border-radius: 5px;
+            padding: 5px;
+            width: 130px;
+            height: 55px;
+            color: #fff;
+            background-color: #f00;
+            border: none;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            margin-top: 100px;
+        }
     </style>
 </head>
 <body>
@@ -699,8 +840,10 @@
     </section>
 
     <section class="three_col2">
-        <h2>掌握自己的學習路徑</h2>
-        <h3>針對不同需求的學員，五倍規劃了多元且完整的學習路徑：從前端到後端，全方面的包套課程，與彈性的線上課程、假日班，任您自由選擇。</h3>
+            <div class="three_col2_h2">
+                <h2>掌握自己的學習路徑</h2>
+                <h3>針對不同需求的學員，五倍規劃了多元且完整的學習路徑：從前端到後端，全方面的包套課程，與彈性的線上課程、假日班，任您自由選擇。</h3>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-3">
@@ -712,8 +855,79 @@
                             <a href="#">前往課程</a>
                         </div>
                     </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="three_col2_background"></div>
+                        <div class="three_col_content">
+                            <h4>線上課程</h4>
+                            <hr style="width: 99%">
+                            <p>不限時間、地點，自己掌握學習進度。課程內容包含前後端課程，附加完課即提供免費履歷健檢服務。適合在職、喜歡自己掌握進度的人。</p>
+                            <a href="#">前往課程</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="three_col2_background"></div>
+                        <div class="three_col_content">
+                            <h4>線上課程</h4>
+                            <hr style="width: 99%">
+                            <p>不限時間、地點，自己掌握學習進度。課程內容包含前後端課程，附加完課即提供免費履歷健檢服務。適合在職、喜歡自己掌握進度的人。</p>
+                            <a href="#">前往課程</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+    </section>
+    <section class="slideshow">
+        <div class="slideshow_h2">
+            <h2>在五倍，我們一起超越五倍</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-5 col-xl-3">
+                    <p>老師們都與業界非常接近，不會有脫軌或技術跟不上的問題，另外助教也很強大，可以給很多意見和解決我們開發上的困境。周邊環境很舒適，每個組別都有各自的空間可以不受干擾，很多資源可以使用！</p>
+                    <p>陳振庭</p>
+                </div>
+                <div class="col-12 col-lg-5 col-xl-3">
+                    <p>師資很強大，能接受學員意見彈性變化課程內容，每次上課練習專案都不一樣，充足且強大的助教群，能問好、問滿、問到飽。</p>
+                    <p>葉曉湄</p>
+                </div>
+                <div class="col-12 col-lg-5 col-xl-3">
+                    <p>因為工作上的需求選擇到五倍紅寶石進修，最吸引我的地方是課務專員很親切、細心聆聽我的需求並且給予課程的建議，雖然是程式新手，但對這間教室機構有大大的信任感。果不其然，課程也沒有叫人失望，非常推薦五倍紅寶石的課程給有程式需求的人來上課唷！</p>
+                    <p>郭迦吟</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="chosen">
+        <div class="chosen_h2">
+            <h2>精選文章</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <div class="chosen_background"></div>
+                    <div class="chosen_content">
+                        <h3>PTT新貼文提醒、單字蒐集 Chrome 擴充套件？一同窺探有哪些強大的 API 可以使用</h3>
+                        <p>By PastLeo · Aug 4 2020 · 技術文章</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="chosen_background"></div>
+                    <div class="chosen_content">
+                        <h3>PTT新貼文提醒、單字蒐集 Chrome 擴充套件？一同窺探有哪些強大的 API 可以使用</h3>
+                        <p>By PastLeo · Aug 4 2020 · 技術文章</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="chosen_background"></div>
+                    <div class="chosen_content">
+                        <h3>PTT新貼文提醒、單字蒐集 Chrome 擴充套件？一同窺探有哪些強大的 API 可以使用</h3>
+                        <p>By PastLeo · Aug 4 2020 · 技術文章</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button>更多文章</button>
     </section>
     <div style="height: 1000px;"></div>
 </body>
