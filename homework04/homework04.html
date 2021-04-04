@@ -57,16 +57,14 @@
         }
 
         .adver_content1{
-            width: 80%;
-            font-size: 40px;
+            font-size: 60px;
             padding-bottom: 10px;
             font-weight: 600;
             color: #fff;
         }
 
         .adver_content2{
-            width: 90%;
-            font-size: 18px;
+            font-size: 20px;
             color: #fff;
         }
 
@@ -125,14 +123,18 @@
             text-align: center;
         }
 
+        .gear .col-12.col-md-6.col-lg-4{
+        }
+
         .gear .col-12.col-md-6.col-lg-4:not(:first-child){
             margin: 20px 0;
         }
 
         .gear .col-12.col-md-6.col-lg-4 img{
-            width: 40%;
+            width: 30%;
             display: block;
             margin: auto;
+            border-radius: 50%;
         }
 
         .gear .col-12.col-md-6.col-lg-4 h3{
@@ -141,8 +143,8 @@
 
         .gear .col-12.col-md-6.col-lg-4 p{
             text-align: center;
-            font-size: 19px;
-            line-height: 20px;
+            font-size: 17px;
+            line-height: 25px;
         }
 
         .lecturer{
@@ -266,7 +268,6 @@
         }
 
         .media_txt .row{
-
             margin: auto;
         }
 
@@ -305,7 +306,7 @@
         .hexagon{
             width: 100%;
             background-color: #29303E;
-            margin: 20px 0;
+            margin: 20px 0 0 0;
         }
 
         .hexagon h2{
@@ -326,12 +327,23 @@
             color: #fff;
         }
 
-        .hexagon .col-12.col-lg-5:nth-of-type(2) p{
-            font-size: 18px;
+        .hexagon .row{
+            width: 90%;
+            padding-bottom: 100px;
+        }
+        
+        .hexagon .col-12.col-lg-5{
+            margin: 20px 0;
+            padding: 20px;
         }
 
-        .col-12.col-lg-5{
-            margin: 20px 0;
+        .hexagon .col-12.col-lg-5:nth-of-type(2){
+            background-color: #FF133E;
+            border-radius: 20px;
+        }
+
+        .hexagon .col-12.col-lg-5:nth-of-type(2) p{
+            font-size: 18px;
         }
 
         .hexagon .col-12.col-lg-5 a{
@@ -340,9 +352,133 @@
         }
         
         .hexagon .col-12.col-lg-5 a:after{
-            content: " >";
-            
+            content: "❯";
         }
+
+        .hexagon .col-12.col-lg-5 a:hover:after{
+            content: " ❯";
+        }
+
+        .hexagon .col-12.col-lg-5 a:hover{
+            text-decoration: underline;
+        }
+
+        .three_col{
+            width: 100%;
+            background-color: #29303E;
+        }
+
+        .three_col .col-12.col-md-5.col-lg-3{
+            box-shadow: 2px 7px 20px 0px rgba(46, 30, 30, 0.123);
+            margin: 30px 20px;
+            position: relative;
+        }
+
+        .three_col .row{
+            justify-content: flex-start;
+        }
+
+        .three_col h3{
+            font-size: 30px;
+            position: absolute;
+            top: -30px;
+            color: #fff;
+            margin-top: -15px;
+        }
+
+        .three_col .col-12.col-md-5.col-lg-3 span{
+            border: 1px solid #000;
+            border-radius: 4px;
+            margin: 0 10px;
+            padding: 0 3px;
+        }
+
+        .three_col .three_col_background{
+            padding-bottom: 50%;
+            background-image: url(amos1.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .three_col_span{
+            padding: 20px 0;
+            background-color: #fff;
+        }
+
+        .three_col hr{
+            margin-top: 15px;
+        }
+
+        .three_col_h4{
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            margin-top: -15px;
+            border-radius: 10px;
+        }
+
+        .three_col h4{
+            margin: 0 10px;
+        }
+
+        .three_col button{
+            font-size: 18px;
+            border-radius: 5px;
+            padding: 5px;
+            width: 130px;
+            height: 55px;
+            color: #fff;
+            background-color: #f00;
+            border: none;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+        }
+
+        .three_col2{
+            width: 100%;
+        }
+
+        .three_col2 h2{
+            font-size: 30px;
+            margin: 20px 0;
+        }
+
+        .three_col2 h3{
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        .three_col2 .three_col2_background{
+            background-image: url(nodamge.PNG);
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 200px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .three_col2 img{
+            width: 100%;
+        }
+
+        .three_col2 .col-12.col-lg-3{
+            box-shadow: 2px 7px 20px 0px rgba(46, 30, 30, 0.123);
+            margin: 30px 20px;
+        }
+
+        .three_col2 h4{
+            font-size: 20px;
+        }
+
+        .three_col2 .three_col_content{
+            padding: 10px;
+            line-height: 22px;
+            border-radius: 10px;
+        }
+
+        
     </style>
 </head>
 <body>
@@ -377,17 +513,20 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <img src="https://picsum.photos/100/100?grayscale" alt="fakeimg">
                     <h3>鍛鍊實力，主導學習</h3>
-                    <p>搭配最新技術版本，掌握業界脈動，與需求緊密結合，鍛鍊程式實力。</p>
+                    <p>搭配最新技術版本，掌握業界脈動，</p>
+                    <p>與需求緊密結合，鍛鍊程式實力。</p>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <img src="https://picsum.photos/100/100?grayscale" alt="fakeimg">
                     <h3>完整規劃，絕不漏接</h3>
-                    <p>線上補課、線下討論與社群活動，確保學員擁有充分且多元的學習資源和支持系統。</p>
+                    <p>線上補課、線下討論與社群活動，</p>
+                    <p>確保學員擁有充分且多元的學習資源和支持系統。</p>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <img src="https://picsum.photos/100/100?grayscale" alt="fakeimg">
                     <h3>挑戰困境，突破職涯</h3>
-                    <p>無論新手塊領域，或在職工程師深度進修，讓五倍為你解構學習，突破困境。</p>
+                    <p>無論新手塊領域，或在職工程師深度進修，</p>
+                    <p>讓五倍為你解構學習，突破困境。</p>
                 </div>
             </div>
         </div>
@@ -515,6 +654,67 @@
                 </div>
             </div>
     </section>
-    <!-- <div style="height: 2000px"></div> -->
+
+    <section class="three_col">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5 col-lg-3">
+                    <div class="three_col_background">
+                        <h3>近期課程</h3>
+                    </div>
+                    <div class="three_col_span">
+                        <span>2021 / 4 月班</span>
+                        <span>2021 / 10月班</span>
+                        <hr style="width: 96%">
+                    </div>
+                    <div class="three_col_h4">
+                        <h4>講師 : 李建杭(Amos Lee)</h4><span>入門課程</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 col-lg-3">
+                    <div class="three_col_background"></div>
+                    <div class="three_col_span">
+                        <span>2021 / 4 月班</span>
+                        <span>2021 / 10月班</span>
+                        <hr style="width: 96%">
+                    </div>
+                    <div class="three_col_h4">
+                        <h4>講師 : 李建杭(Amos Lee)</h4><span>入門課程</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 col-lg-3">
+                    <div class="three_col_background"></div>
+                    <div class="three_col_span">
+                        <span>2021 / 4 月班</span>
+                        <span>2021 / 10月班</span>
+                        <hr style="width: 96%;">
+                    </div>
+                    <div class="three_col_h4">
+                        <h4>講師 : 李建杭(Amos Lee)</h4><span>入門課程</span>
+                    </div>
+                </div>
+            </div>
+            <button>看更多課程</button>
+        </div>
+    </section>
+
+    <section class="three_col2">
+        <h2>掌握自己的學習路徑</h2>
+        <h3>針對不同需求的學員，五倍規劃了多元且完整的學習路徑：從前端到後端，全方面的包套課程，與彈性的線上課程、假日班，任您自由選擇。</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3">
+                        <div class="three_col2_background"></div>
+                        <div class="three_col_content">
+                            <h4>線上課程</h4>
+                            <hr style="width: 99%">
+                            <p>不限時間、地點，自己掌握學習進度。課程內容包含前後端課程，附加完課即提供免費履歷健檢服務。適合在職、喜歡自己掌握進度的人。</p>
+                            <a href="#">前往課程</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <div style="height: 1000px;"></div>
 </body>
 </html>

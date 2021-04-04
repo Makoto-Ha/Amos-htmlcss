@@ -15,7 +15,7 @@
     margin-right: -15px; */
 }
 
-[class*="col"]:not([class*="row"]){padding: 0 15px; box-sizing: border-box;}
+[class*="col"]:not([class*="row"]){ box-sizing: border-box;}
 
 .col-1{width: 8.333333%;}
 .col-2{width: 16.666666%;}
