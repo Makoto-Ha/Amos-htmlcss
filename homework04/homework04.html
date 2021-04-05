@@ -128,10 +128,29 @@
             }
         }
 
-        [class*="header_span"]{
-            background-color: #000;
-            width: 45%;
+        .header_right label{
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        input{
+            position: absolute;
+            top: -100%;
+        }
+
+        .header_right label:before{
+            content: "";
+            position: absolute;
             height: 2px;
+            width: 30px;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: #000;
+            box-shadow: 0 10px 0 #000, 0 -10px 0 #000;
         }
 
         .adver{
@@ -277,7 +296,7 @@
         .lecturer .col-12.col-md-10.col-lg-8 h2{
             font-size: 30px;
             font-weight: 600;
-            padding: 10px 10px 20px 10px;
+            padding: 10px 10px 20px 0px;
             text-align: left;
             position: relative;
         }
@@ -515,8 +534,6 @@
         }
 
         .three_col .row{
-            max-width: 1800px;
-            margin: auto;
             justify-content: center;
         }
 
@@ -827,7 +844,7 @@
         }
 
         .footer .row{
-            max-width: 1420px;
+            max-width: 1760px;
             margin: auto;
         }
 
@@ -906,6 +923,37 @@
             justify-content: center;
             text-align: center;
         }
+
+        .select{
+            width: 100%;
+            background-color: #fff;
+            position: fixed;
+            margin-top: 2.8em;
+            display: none;
+            z-index: 10;
+        }
+
+        .select a{
+            display: block;
+            margin: 20px 20px 40px;
+            text-decoration: none;
+            color: #000;
+            font-size: 19px;
+        }
+
+        #menu_control:checked ~ .select{
+            display: block;
+        }
+
+        @media screen and (min-width:992px){
+            .select{
+                width: 0;
+            }
+
+            .select a{
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -919,9 +967,9 @@
             </div>
         </div>
         <div class="header_right">
-            <div class="header_span"></div>
-            <div class="header_span"></div>
-            <div class="header_span"></div>
+            <label for="menu_control">
+                <span></span>
+            </label>
         </div>
         <div class="header_right2">
             <nav>
@@ -934,6 +982,16 @@
             </nav>
         </div>
     </div>
+
+    <input type="checkbox" id="menu_control">
+    <section class="select">
+        <a href="#">全方位培訓</a>
+        <a href="#">ASTRO Camp</a>
+        <a href="#">線上課程</a>
+        <a href="#">短期課程</a>
+        <a href="#">專屬文章</a>
+        <a href="#">最新消息</a>
+    </section>
     
     <section class="adver">
         <div class="adver2">
