@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid.css">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    div{
+        height: 200px;
+        /* clip-path: polygon(0 0, 100% 0%, 100% 20%, 0 20%, 0 40%, 100% 40%, 100% 60%, 0 60%, 0 80%, 100% 80%, 100% 100%, 0 100%); */
+        background-color: #f00;
+        position: relative;
+    }
+
+
+    div::after{
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-left:  50vw solid transparent;
+        border-right: 50vw solid transparent;
+        border-top: 100px solid #f00;
+        bottom: -100px;
+    }
+
+</style>
+<body>
+<div></div>
+</body>
+</html>
