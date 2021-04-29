@@ -1,0 +1,464 @@
+ html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.first{
+    width: 1020px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.first h1{
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.first span::after{
+    content: "";
+    margin: auto;
+    border-bottom: 5px solid #000;
+    width: 40px;
+    height: 20px;
+    display: block;
+}
+
+.first_content2{
+    padding: 60px 0 0 0;
+    margin-right: auto;
+}
+
+.first_content2 nav{
+    display: flex;
+    text-align: center;
+}
+
+.first_content2 a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    margin: 0 5px;
+    border: 1px solid rgba(173, 173, 173, 0.829);
+    /* display: block; */
+    padding: 8px 0px;
+    width: 190px;
+    position: relative;
+}
+
+.first_content2 a:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    display: block;
+    z-index: -1;
+    background-color: #AE0014;
+    transition: 0.5s;
+}
+
+.first_content2 a:hover:after{
+    height: 100%;
+    transition: 0.3s;
+}
+
+.first_content2 a:hover{
+    color: #fff;
+}
+
+.car_wrap{
+    width: 100%;
+    height: 600px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.car_wrap2{
+    width: 750px;
+    height: 480px;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url("../imgfile/homework_03_img01.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.leftup{
+    width: 330px;
+    height: 420px;
+    position: absolute;
+    left: -180px;
+    top: -126px;
+}
+
+.leftup_content1 h2{
+    font-size: 45px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.leftup_content1 span{
+    writing-mode: vertical-lr;
+    width: 140px;
+    font-weight: 300;
+    font-size: 120px;
+    color: #fff;
+}
+
+.leftup_content1{
+    width: 100%;
+    height: 126px;
+    background-color: darkred;
+    display: flex;
+    align-items: center;
+}
+
+.leftup_content2{
+    width: 310px;
+    background-color: #000;
+    padding: 10px;
+    display: inline-block;
+    text-align: left;
+    color: #fff;
+}
+
+.leftup_content2 h3{
+    font-size: 24px;
+    margin-top: 25px;
+}
+
+.leftup_content2 p{
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: 10px;
+}
+
+.leftdown{
+    width: 620px;
+    background-color: rgb(238, 238, 238);
+    position: absolute;
+    left: -130px;
+    bottom: -220px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.leftdown h3{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 0;
+    margin-bottom: -10px;
+    margin-top: -10px;
+    color: darkred;
+}
+
+.leftdown h3::after{
+    content: "";
+    border: 1px solid darkred;
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    color: darkred;
+}
+
+.leftdown h4{
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    width: 110px;
+    padding: 5px;
+    background-color: #000;
+    margin: 10px 0;
+    border-radius: 5%;
+
+}
+
+.leftdown p{
+    line-height: 22px;
+    margin: -4px 0;
+}
+
+.leftdown p:nth-of-type(2n+3){
+    text-indent: 0.5em;
+}
+
+.leftdown h4:nth-child(2){
+    width: 90px;
+}
+
+.rightup{
+    width: 460px;
+    height: 280px;
+    background-color: rgba(206, 204, 204, 0.3);
+    position: relative;
+    right: -80px;
+    top: -190px;
+    z-index: -1;
+}
+.youtube{
+    width: 80px;
+    height: 50px;
+    background-color: darkred;
+    margin-left: auto;
+    position: relative;
+    left: 480px;
+}
+
+
+.triangle{
+    width: 40px;
+    height: 30px;
+}
+
+.triangle::after{
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 25px solid #fff;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+/* 分界線 */
+
+.car_wrap_two{
+    width: 100%;
+    height: 600px;
+    margin-top: 330px;
+    display: flex;
+    justify-content: center;
+}
+.car_wrap2_two{
+    width: 750px;
+    height: 480px;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin-right: 360px;
+    background-image: url("../imgfile/homework_03_img02.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.leftup_two{
+    width: 310px;
+    position: absolute;
+    right: -260px;
+    top: -128px;
+}
+
+.leftup_content1_two{
+    width: 100%;
+    height: 128px;
+    display: flex;
+    background-color: darkred;
+}
+
+.leftup_content1_two h2{
+    font-size: 47px;
+    font-weight: 400;
+    color: #fff;
+    margin: auto;
+    width: 190px;
+    height: 50px;
+}
+
+.leftup_content1_two span{
+    writing-mode: vertical-rl;
+    font-size: 100px;
+    font-weight: 300;
+    color: #fff;    
+    display: block;
+    width: 100px;
+    margin-left: auto;
+}
+
+.leftup_content2_two{
+    width: 100%;
+    background-color: #000;
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+
+.leftup_content2_two h3{
+    font-size: 24px;
+    color: #fff;
+}
+
+.leftup_content2_two p{
+    margin-top: 13px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.leftdown_two{
+    width: 620px;
+    background-color: rgb(238, 238, 238);
+    position: absolute;
+    right: -260px;
+    bottom: -160px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.leftdown_two h3{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 0;
+    margin-bottom: -10px;
+    margin-top: -10px;
+    color: darkred;
+}
+
+.leftdown_two h3::after{
+    content: "";
+    border: 1px solid darkred;
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    color: darkred;
+}
+
+.leftdown_two h4{
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    width: 75px;
+    padding: 5px;
+    background-color: #000;
+    margin: 10px 0;
+    border-radius: 5%;
+
+}
+
+.leftdown_two p{
+    line-height: 22px;
+    margin: -4px 0;
+}
+
+
+
+.rightup_two{
+    width: 550px;
+    height: 420px;
+    background-color: rgba(206, 204, 204, 0.3);
+    position: relative;
+    right: -80px;
+    top: -80px;
+    z-index: -1;
+}
+.youtube_two{
+    width: 80px;
+    height: 50px;
+    background-color: darkred;
+    margin-right: auto;
+    position: relative;
+    right: 20px;
+}
+
+.triangle{
+    width: 40px;
+    height: 30px;
+}
+
+.triangle::after{
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 25px solid #fff;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.third_h4 h4:nth-of-type(1){
+    width: 126px;
+}
+
+.third_h4 h4:nth-of-type(2){
+    width: 90px;
+}
+
+.third_wrap{
+    margin-top: 330px;
+}
+
+.third_wrap2{
+    background-image: url("../imgfile/homework_03_img03.png")
+}
+
+.fourth h4:nth-of-type(1){
+    width: 110px;
+}
+
+.fourth h4:nth-of-type(2){
+    width: 145px;
+}
+
+.fourth p:nth-of-type(2){
+    text-indent: 0.5em;
+}
+
+.fourth_wrap2{
+    background-image: url("../imgfile/homework_03_img04.png");
+    background-size: cover;
+}
